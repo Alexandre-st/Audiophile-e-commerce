@@ -17,3 +17,9 @@
   width: min(100% - 0rem, 111rem);
   margin-inline: auto;
 }
+
+// Header border
+.border-bottom {
+  border-bottom: 1px solid #ffffff;
+  opacity: 0.1;
+}

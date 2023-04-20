@@ -1,3 +1,23 @@
+@use "../base/mixins" as *;
+
 .header {
   background-color: #0e0e0e;
+  position: relative;
+
+  &-container {
+    padding: 3.2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq(tablet) {
+      justify-content: flex-start;
+    }
+  }
+
+  &-cart {
+    @include mq(tablet) {
+      margin-left: auto;
+    }
+  }
 }

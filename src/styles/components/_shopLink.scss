@@ -1,0 +1,59 @@
+@use "../base/mixins" as *;
+
+.shopLink {
+  display: flex;
+  flex-direction: column;
+  gap: 6.8rem;
+  padding-top: 5.2rem;
+
+  @include mq(tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  &-content {
+    background-color: #f1f1f1;
+    position: relative;
+    border-radius: 8px;
+    height: 16.5rem;
+
+    @include mq(tablet) {
+      flex: 1;
+    }
+
+    &-img {
+      position: absolute;
+      top: -4.2rem;
+      left: 50%;
+      transform: translate(-50%);
+      width: fit-content;
+      height: 12rem;
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 8.88rem;
+
+      h3 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 1.07143px;
+        margin-bottom: 1.7rem;
+      }
+
+      &-link {
+        font-weight: 700;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        opacity: 0.5;
+      }
+    }
+  }
+}
