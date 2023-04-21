@@ -11,11 +11,19 @@ const Header = () => {
       <div className="header-container container">
         <Menu toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} />
         <img src={audiophile} alt="Audiophile logo" />
+        <nav className="header-nav">
+          <ul className="header-nav-list">
+            <li>HOME</li>
+            <li>HEADPHONES</li>
+            <li>SPEAKERS</li>
+            <li>EARPHONES</li>
+          </ul>
+        </nav>
         <div className="header-cart">
           <img src={cartLogo} alt="Open the basket" />
         </div>
       </div>
-      <div className="border-bottom"></div>
+      <div className="border-bottom container-img"></div>
     </header>
   );
 };

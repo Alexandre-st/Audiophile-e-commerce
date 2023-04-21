@@ -1,0 +1,84 @@
+@use "../base/mixins" as *;
+
+.hero-container {
+  &-text {
+    color: #ffffff;
+    text-align: center;
+    padding: 10.8rem 0 11.2rem 0;
+    max-width: 32.8rem;
+    margin: auto;
+
+    @include mq(tablet) {
+      max-width: 39.6rem;
+      padding: 12.6rem 0 16.7rem 0;
+    }
+
+    @include mq(laptop) {
+      margin-left: 4rem;
+      text-align: left;
+      padding: 12.8rem 0 15.8rem 0;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 1.9rem;
+      letter-spacing: 1rem;
+      opacity: 0.5;
+      margin-bottom: 1.6rem;
+
+      @include mq(tablet) {
+        margin-bottom: 2.4rem;
+      }
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 3.6rem;
+      line-height: 4rem;
+      letter-spacing: 1.28571px;
+      text-transform: uppercase;
+
+      @include mq(tablet) {
+        font-size: 5.6rem;
+        line-height: 5.8rem;
+        letter-spacing: 2px;
+      }
+    }
+
+    p {
+      opacity: 0.75;
+      margin: 2.4rem 0 2.8rem 0;
+
+      @include mq(tablet) {
+        margin: auto;
+        margin-top: 2.4rem;
+        margin-bottom: 4rem;
+        max-width: 34.9rem;
+      }
+
+      @include mq(laptop) {
+        margin: 2.4rem 0 4rem 0;
+      }
+    }
+  }
+
+  &-img {
+    background-image: url("/assets/home/mobile/image-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 90%;
+
+    @include mq(tablet) {
+      background-image: url("/assets/home/tablet/image-header.jpg");
+    }
+
+    @include mq(laptop) {
+      background-image: url("/assets/home/desktop/image-hero.jpg");
+    }
+
+    @include mq(desktop) {
+      background-position: 0;
+    }
+  }
+}

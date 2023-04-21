@@ -2,6 +2,7 @@
 
 :root {
   font-size: 10px;
+  font-family: "Manrope", sans-serif;
 }
 
 .container {
@@ -16,10 +17,45 @@
 .container-img {
   width: min(100% - 0rem, 111rem);
   margin-inline: auto;
+
+  // @include mq(tablet) {
+  //   width: min(100% - 8rem, 111rem);
+  // }
 }
 
 // Header border
 .border-bottom {
   border-bottom: 1px solid #ffffff;
   opacity: 0.1;
+}
+
+// Hero part for each pages
+.hero {
+  background-color: #191919;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.btn {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 16rem;
+  height: 4.8rem;
+  text-align: center;
+
+  &-orange {
+    background-color: #d87d4a;
+    margin: auto;
+
+    @include mq(laptop) {
+      margin: 0;
+    }
+  }
 }
