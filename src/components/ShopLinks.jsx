@@ -3,7 +3,7 @@ import earphones from "../assets/shared/desktop/image-category-thumbnail-earphon
 import headphones from "../assets/shared/desktop/image-category-thumbnail-headphones.png";
 import speakers from "../assets/shared/desktop/image-category-thumbnail-speakers.png";
 
-const ShopLink = () => {
+const ShopLinks = () => {
   return (
     <section className="shopLink container">
       <div className="shopLink-content">
@@ -49,4 +49,4 @@ const ShopLink = () => {
   );
 };
 
-export default ShopLink;
+export default ShopLinks;

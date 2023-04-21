@@ -12,6 +12,11 @@
     gap: 1rem;
   }
 
+  @include mq(laptop) {
+    gap: 3rem;
+    padding-top: 5.9rem;
+  }
+
   &-content {
     background-color: #f1f1f1;
     position: relative;
@@ -22,6 +27,10 @@
       flex: 1;
     }
 
+    @include mq(laptop) {
+      height: 20.4rem;
+    }
+
     &-img {
       position: absolute;
       top: -4.2rem;
@@ -29,6 +38,11 @@
       transform: translate(-50%);
       width: fit-content;
       height: 12rem;
+
+      @include mq(laptop) {
+        height: 16rem;
+        top: -6rem;
+      }
     }
 
     &-text {
@@ -36,6 +50,10 @@
       flex-direction: column;
       align-items: center;
       margin-top: 8.88rem;
+
+      @include mq(laptop) {
+        margin-top: 11.6rem;
+      }
 
       h3 {
         font-size: 1.5rem;
@@ -55,5 +73,18 @@
         opacity: 0.5;
       }
     }
+  }
+}
+
+// The container links for the shopLinks
+.links {
+  margin: 4rem 0 12rem;
+
+  @include mq(tablet) {
+    margin: 9.6rem 0;
+  }
+
+  @include mq(laptop) {
+    margin: 12.75rem 0 16.8rem 0;
   }
 }

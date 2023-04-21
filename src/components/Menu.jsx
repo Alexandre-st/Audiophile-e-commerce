@@ -1,5 +1,5 @@
 import hamburgerMenu from "../assets/shared/tablet/icon-hamburger.svg";
-import ShopLink from "./ShopLinks";
+import ShopLinks from "./ShopLinks";
 
 const Menu = ({ toggleMenu, setToggleMenu }) => {
   const toggleTheMenu = () => {
@@ -17,7 +17,7 @@ const Menu = ({ toggleMenu, setToggleMenu }) => {
         {toggleMenu && (
           <div className="header-menu-bg">
             <div className="header-menu-bg-white">
-              <ShopLink />
+              <ShopLinks />
             </div>
           </div>
         )}
