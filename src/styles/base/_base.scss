@@ -89,6 +89,10 @@
   &-black {
     background-color: #000000;
     margin: auto;
+
+    @include mq(laptop) {
+      margin: 0;
+    }
   }
 
   &-transparent {

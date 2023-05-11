@@ -4,6 +4,7 @@ import yx1earphonesMobile from "../assets/home/mobile/image-earphones-yx1.jpg";
 import zx9SpeakerMobile from "../assets/home/mobile/image-speaker-zx9.png";
 import yx1earphonesTablet from "../assets/home/tablet/image-earphones-yx1.jpg";
 import zx9SpeakerTablet from "../assets/home/tablet/image-speaker-zx9.png";
+import GearLocation from "../components/GearLocation";
 import ProductButton from "../components/ProductButton";
 import ShopLinks from "../components/ShopLinks";
 
@@ -65,6 +66,7 @@ const Homepage = () => {
           </div>
         </div>
       </section>
+      <GearLocation />
     </main>
   );
 };
