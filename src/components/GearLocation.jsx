@@ -1,6 +1,6 @@
-import gearImageDesktop from '../assets/shared/desktop/image-best-gear.jpg';
-import gearImage from '../assets/shared/mobile/image-best-gear.jpg';
-import gearImageTablet from '../assets/shared/tablet/image-best-gear.jpg';
+import gearImageDesktop from "../assets/shared/desktop/image-best-gear.jpg";
+import gearImage from "../assets/shared/mobile/image-best-gear.jpg";
+import gearImageTablet from "../assets/shared/tablet/image-best-gear.jpg";
 
 const GearLocation = () => {
   return (
@@ -15,7 +15,9 @@ const GearLocation = () => {
           />
         </picture>
         <div className="gearLocation-content-text">
-          <h3 className="gearLocation-content-title">Bringing you the <span>best</span> audio gear</h3>
+          <h3 className="gearLocation-content-title">
+            Bringing you the <span>best</span> audio gear
+          </h3>
           <p className="text">
             Located at the heart of New York City, Audiophile is the premier
             store for high end headphones, earphones, speakers, and audio
@@ -28,6 +30,6 @@ const GearLocation = () => {
       </div>
     </section>
   );
-}
- 
+};
+
 export default GearLocation;

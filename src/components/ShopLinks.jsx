@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import arrowLink from "../assets/shared/desktop/icon-arrow-right.svg";
 import earphones from "../assets/shared/desktop/image-category-thumbnail-earphones.png";
 import headphones from "../assets/shared/desktop/image-category-thumbnail-headphones.png";
 import speakers from "../assets/shared/desktop/image-category-thumbnail-speakers.png";
@@ -15,7 +16,8 @@ const ShopLinks = () => {
         <div className="shopLink-content-text">
           <h3 className="shopLink-content-title">HEADPHONES</h3>
           <Link className="shopLink-content-text-link" to="/">
-            Shop
+            <p>Shop</p>
+            <img src={arrowLink} alt="Arrow to the shop" />
           </Link>
         </div>
       </div>
@@ -28,7 +30,8 @@ const ShopLinks = () => {
         <div className="shopLink-content-text">
           <h3 className="shopLink-content-title">SPEAKERS</h3>
           <Link className="shopLink-content-text-link" to="/">
-            Shop
+            <p>Shop</p>
+            <img src={arrowLink} alt="Arrow to the shop" />
           </Link>
         </div>
       </div>
@@ -41,7 +44,8 @@ const ShopLinks = () => {
         <div className="shopLink-content-text">
           <h3 className="shopLink-content-title">EARPHONES</h3>
           <Link className="shopLink-content-text-link" to="/">
-            Shop
+            <p>Shop</p>
+            <img src={arrowLink} alt="Arrow to the shop" />
           </Link>
         </div>
       </div>
